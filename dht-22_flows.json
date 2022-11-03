@@ -1,0 +1,276 @@
+[
+    {
+        "id": "66c3037e450b2b1f",
+        "type": "tab",
+        "label": "ROV Pi DHT-22",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "89da799533bc5842",
+        "type": "rpi-dht22",
+        "z": "66c3037e450b2b1f",
+        "name": "",
+        "topic": "rpi-dht22",
+        "dht": 22,
+        "pintype": "0",
+        "pin": "27",
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "65fb508cf66e02ff",
+                "f660619fc6bb7594",
+                "ea8ca1895a28bd3b",
+                "f2f35dce0c67f48a",
+                "4255ec61904e8bf5"
+            ]
+        ]
+    },
+    {
+        "id": "a8104e566195ae0c",
+        "type": "inject",
+        "z": "66c3037e450b2b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "89da799533bc5842"
+            ]
+        ]
+    },
+    {
+        "id": "65fb508cf66e02ff",
+        "type": "debug",
+        "z": "66c3037e450b2b1f",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f660619fc6bb7594",
+        "type": "ui_gauge",
+        "z": "66c3037e450b2b1f",
+        "name": "",
+        "group": "011d53ae182c4df3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "45",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 430,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "0a5971c11d589471",
+        "type": "influxdb out",
+        "z": "66c3037e450b2b1f",
+        "influxdb": "2fc355cbaff98278",
+        "name": "PIROV",
+        "measurement": "PIROV Temperature",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "PIROV",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 440,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ea8ca1895a28bd3b",
+        "type": "mqtt out",
+        "z": "66c3037e450b2b1f",
+        "name": "",
+        "topic": "ROVSHOP temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b0883a887732fa00",
+        "x": 490,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f2f35dce0c67f48a",
+        "type": "json",
+        "z": "66c3037e450b2b1f",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "30edae683ff10dcb",
+                "0a5971c11d589471"
+            ]
+        ]
+    },
+    {
+        "id": "30edae683ff10dcb",
+        "type": "debug",
+        "z": "66c3037e450b2b1f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4255ec61904e8bf5",
+        "type": "ui_chart",
+        "z": "66c3037e450b2b1f",
+        "name": "",
+        "group": "011d53ae182c4df3",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 430,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "011d53ae182c4df3",
+        "type": "ui_group",
+        "name": "ROV Shop",
+        "tab": "2101583ed0c7ab00",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2fc355cbaff98278",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "pirov",
+        "name": "pirov",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "b0883a887732fa00",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2101583ed0c7ab00",
+        "type": "ui_tab",
+        "name": "E/V Nautilus",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
