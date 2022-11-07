@@ -1,16 +1,8 @@
 Overview
 ========
 
-This section gives an introduction to OET ROV operation and maintenance.   
-
-Operation
-*********
+This section gives an introduction to OET ROV   
 
 - [] Create document tree
 - [] Populate document tree
 
-Maintenance
-***********
-
-- [] Create document tree
-- [] Populate document tree
