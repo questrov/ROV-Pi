@@ -11,6 +11,8 @@ Welcome to ROV's documentation!
 	:caption: Contents:
 
 	intro
+	operation
+	maintenance
 
 Indices and tables
 ==================
