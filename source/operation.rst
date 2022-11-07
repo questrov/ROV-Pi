@@ -12,7 +12,7 @@ GUI
 Dashboard
 ---------
 
-.. image::images/herc_hydraulics.png
+.. image:: images/herc_hydraulics.png
 
 Shown at the top half of almost every page for at-a-glance system status.
 
@@ -40,6 +40,7 @@ Indicator lights:
 	- Bypass, Red indicates bypass is enabled, green means bypass is released and full pressure is enabled
 Temperature and Humidity show condition of Herc main bottle
 Hydraulic pressures are shown from the distribution manifold
+
 Herc ground fault monitoring:
 	- Green indicates ground fault at an acceptable level
 	- Yellow indicates no recent update
