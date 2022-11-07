@@ -9,6 +9,9 @@ Operation
 - [] Create document tree
 - [] Populate document tree
 
+GUI
+***
+
 Maintenance
 ***********
 
