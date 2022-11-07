@@ -1,7 +1,7 @@
 Operation
 =========
 
-This section fives an introduction to OET ROV Operation
+This section gives an introduction to OET ROV Operation
 
 - [] Create document tree
 - [] Populate document tree
@@ -12,8 +12,10 @@ GUI
 Dashboard
 ---------
 
-Shown at the top half of almost every page for at-a-glance system status
+Shown at the top half of almost every page for at-a-glance system status.
+
 Blue box shows thruster directions and forces. Click on percentages to cycle through %thrust, lbs force, and rpm.
+
 Depth, altitude, and heading readout:
 	- Depth shown from Herc Paro
 	- Altitude shown from Herc DVL. Reads 0.0 when DVL has zero beams
@@ -33,7 +35,7 @@ Indicator lights:
 	- Herc, Argus, and Top indicate communications to each vehicle and Topside,respectively
 	- GF, Green indicates no ground fault on either vehicle, yellow indicates no
 recent update or small ground fault, and red indicates significant ground fault on at least one vehicle
-	- T/H, Green indicates no temperature or humidity problems on either vehicle,yellow indicates no recent update, and red indicates T or H problems on at least one vehicle
+	- T/H, Green indicates no temperature or humidity problems on either vehicle, yellow indicates no recent update and red indicates T or H problems on at least one vehicle
 	- Leak, Green indicates no leak or no recent update, red indicates leak in a bottle or junction box on either vehicle
 	- Bypass, Red indicates bypass is enabled, green means bypass is released and full pressure is enabled
 Temperature and Humidity show condition of Herc main bottle
