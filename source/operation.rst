@@ -57,3 +57,23 @@ Argus ground fault monitoring:
 **Topside shows voltage going into High Voltage cabinet**
 
 **Autos indicators show status of Herc autos**
+
+Hotel Hydraulics page
+---------------------
+
+.. image:: _static/herc_hydraulics.png
+
+Wandfluh A, B, and C enable buttons: 
+	* Enables proportional hydraulic valves used for thrusters and spare proportional valves.
+
+Kraft power button: 
+	* Enables electrical power to Kraft manipulator
+
+Kraft Valve: 
+	* Opens high pressure hydraulic supply to Kraft manipulator
+
+Thruster enable button: 
+	* When off, joybox thruster controls are locked out
+
+Bypass release: 
+	* Enables full system pressure when pressed (releases bypass mode)
