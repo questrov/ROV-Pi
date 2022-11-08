@@ -77,3 +77,27 @@ Thruster enable button:
 
 Bypass release: 
 	* Enables full system pressure when pressed (releases bypass mode)
+
+Hotel - Sensors page
+--------------------
+
+.. image:: _static/hotel_sensors.png
+
+Buttons enable power to devices:
+	* Octans Gyro
+	* Mesotech Sonar
+	* Sea King Sonar
+	* Paroscientific Depth Sensor
+	* Doppler Velociy Log (DVL)
+	* USBL beacon
+
+Hotel - Science page
+--------------------
+
+.. image:: _static/hotel_science.png
+
+**Temperature probe, CTD, and Optode oxygen sensor are standard Herc equipment and should be powered on for every dive**
+
+**Ethernet Bottle is standard Herc equipment and is only powered on when cruise-specific scientists gear is connected**
+
+**Power for cruise-specific scientists gear will be shown on this page after being integrated**
