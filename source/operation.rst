@@ -13,7 +13,7 @@ Dashboard
 ---------
 **Shown at the top half of almost every page for at-a-glance system status.**
 
-.. image:: _static/herc_hydraulics.png
+.. image:: _static/plots.png
 
 
 **Blue box shows thruster directions and forces. Click on percentages to cycle through %thrust, lbs force, and rpm.**
@@ -58,10 +58,10 @@ Argus ground fault monitoring:
 
 **Autos indicators show status of Herc autos**
 
-Hotel Hydraulics page
----------------------
+Hotel - Hydraulics page
+-----------------------
 
-.. image:: _static/herc_hydraulics.png
+.. image:: _static/hotel_hydraulics.png
 
 Wandfluh A, B, and C enable buttons: 
 	* Enables proportional hydraulic valves used for thrusters and spare proportional valves.
