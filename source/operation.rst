@@ -101,3 +101,26 @@ Hotel - Science page
 **Ethernet Bottle is standard Herc equipment and is only powered on when cruise-specific scientists gear is connected**
 
 **Power for cruise-specific scientists gear will be shown on this page after being integrated**
+
+Hotel - Lights page
+--------------------
+
+.. image:: _static/hotel_lights.png
+
+**Buttons enable power for lights and lasers**
+
+Hotel - Cameras page
+--------------------
+
+.. image:: _static/hotel_cameras.png
+
+**Buttons enable power for Zeus Plus HD camera, bubble camera, and four tooling cameras**
+
+	* Tooling cameras marked with * or + share a signal path. Only one of each pair can be used at a time. For example, Stbd Rail and Bucket cannot both be used simultaneously. To enable one, ensure the other in the pair is powered off.
+
+Hotel - Spare Power page
+------------------------
+
+.. image:: _static/hotel_sparepwr.png
+
+**Buttons for spare power relays are stored on this page. When cruise-specific scientists gear is installed, the buttons are re-labelled and moved to Hotel Science page.**
